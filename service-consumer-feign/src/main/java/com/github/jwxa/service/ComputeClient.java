@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * </p>
  * User: Jwxa Date: 2017/4/22 ProjectName: spring-cloud-learning Version: 1.0
  */
-@FeignClient("service-provider")
+@FeignClient(value = "service-provider", fallback = ComputeClientHystrix.class)
 public interface ComputeClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/add")

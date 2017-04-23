@@ -17,11 +17,12 @@ import org.springframework.web.client.RestTemplate;
 public class ConsumerController {
 
     @Autowired
-    RestTemplate restTemplate;
+    private ConsumerService consumerService;
+
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add() {
-        return restTemplate.getForEntity("http://SERVICE-PROVIDER/add?a=10&b=20", String.class).getBody();
+        return consumerService.addService();
     }
 
 

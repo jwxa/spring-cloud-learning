@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 类描述
+ * 向eureka注册服务
  * <p>
  * 方法描述列表
  * </p>
