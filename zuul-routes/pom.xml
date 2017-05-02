@@ -9,12 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka</artifactId>
-    <description>服务注册中心单点模式</description>
+    <artifactId>zuul-routes</artifactId>
+    <description>zuul 服务网关 用于路由转发 权限验证 类似Nginx</description>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
     </dependencies>
 

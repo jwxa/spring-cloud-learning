@@ -16,6 +16,10 @@
         <module>service-consumer-feign</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>zuul-routes</module>
+        <module>service-provider2</module>
+        <module>eureka-cluster1</module>
+        <module>eureka-cluster2</module>
     </modules>
 
     <properties>
