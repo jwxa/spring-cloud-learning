@@ -20,6 +20,8 @@
         <module>service-provider2</module>
         <module>eureka-cluster1</module>
         <module>eureka-cluster2</module>
+        <module>config-client1-with-bus</module>
+        <module>config-client2-with-bus</module>
     </modules>
 
     <properties>
