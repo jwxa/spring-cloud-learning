@@ -22,6 +22,7 @@
         <module>eureka-cluster2</module>
         <module>config-client1-with-bus</module>
         <module>config-client2-with-bus</module>
+        <module>server-zipkin</module>
     </modules>
 
     <properties>

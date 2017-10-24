@@ -11,4 +11,12 @@
 
     <artifactId>service-provider</artifactId>
     <description>服务提供者</description>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
+import org.springframework.context.annotation.Bean;
 
 /**
  * 通过Feign以接口和注解配置的方式，轻松实现了对service-provider服务的绑定，
@@ -19,5 +21,10 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 public class FeignApplication {
     public static void main(String[] args) {
         SpringApplication.run(FeignApplication.class, args);
+    }
+
+    @Bean
+    public AlwaysSampler defaultSampler(){
+        return new AlwaysSampler();
     }
 }

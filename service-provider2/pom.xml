@@ -13,4 +13,10 @@
     <description>服务提供者2，用于zuul服务网关测试不同url转发使用</description>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+    </dependencies>
 </project>

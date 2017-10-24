@@ -3,7 +3,6 @@ package com.github.jwxa;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
-import org.springframework.context.annotation.Bean;
 
 /**
  * 类描述
@@ -14,10 +13,10 @@ import org.springframework.context.annotation.Bean;
  */
 @EnableZuulProxy//注解开启Zuul
 @SpringCloudApplication//元注解 包含了@SpringBootApplication、@EnableDiscoveryClient、@EnableCircuitBreaker
-public class Application {
+public class ZuulApplication {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Application.class).web(true).run(args);
+        new SpringApplicationBuilder(ZuulApplication.class).web(true).run(args);
     }
 
 //    @Bean
